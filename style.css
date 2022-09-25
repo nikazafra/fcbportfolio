@@ -1,0 +1,80 @@
+/*cascading style sheet*/
+/*
+	SYntax for CSS Styling :
+
+	Selector {
+		property:  value;
+	}
+*/
+/*IN CSS WE HAVE THE SPECIFICITY RULE
+1. #id - highest priority
+2. element/<tag selector 
+3. .class
+4. universal*/
+/*
+		Universal selector(*) - Selects all the HTML element.
+*/
+* {
+	font-family: "Roboto", sans-serif;
+	/*naay san seriff kay aron if ever mawala ang roboto mangita syag san seriff na font*/
+}
+/*tag/element selector (<tagName>) Selector- Selects a HTML elements using tag name*/
+h1, h2 {
+	font-family: "Monserrat", sans-serif;
+		}
+img{
+
+	height: 250px;
+	width: 250px;
+	}
+
+/*
+ Id selctor (#idName) - use id attribute to select specific element
+*/
+
+#landing {
+	/*vh= viewport height is relative to the viewing screen*/
+	height: 100vh;
+	/*center the content vertically  using flexbox*/
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* class selector: (.className) - use to select all elements belongs to a particular class attribute*/
+.jumbotron{
+	background-color: transparent;
+}
+
+#gallery{
+	height: 100vh;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+/*ul as tag selector*/
+ul{
+list-style: none;
+padding: 0;
+}
+
+h2{
+	color: #007bff;
+}
+
+.tools{
+	color: white;
+	height: 2000px;
+	width: 75%;
+	border: 5px solid #f2f2f2;
+	margin: 20px;
+	padding: 25px;
+}
+
+html{
+	scroll-behavior: smoooth;
+}
